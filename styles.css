@@ -249,7 +249,7 @@ section:first-child{
 #tournament_container
     {background-color: RGBA(30,30,30,1);
     width: 1519.2px;
-    height: 1000px;
+    height: 700px;
     color: white;
     display: flex;
     flex-direction: row;
@@ -279,7 +279,9 @@ aside
           background-color: RGBA(30,30,30,1);
         width: 445px;
         color: white;
-align-self: flex-end;}
+        align-self: flex-end;
+        margin-right: 50px;
+}
 
 ul
     {
@@ -590,7 +592,7 @@ footer
 
 #footer
     {display: flex;
-    width: 800px;
+    width: 820px;
     justify-content: flex-end;
     flex-wrap: wrap;
     height: inherit;
