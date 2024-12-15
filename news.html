@@ -12,101 +12,135 @@
     </head>
     <body>
 <!--navigational bar where all elements will be aligned horizontally-->
-       <nav> 
+         <nav> 
            <a href="index.html">
-               <img src="images/logo/Asset%201.svg" height="150" width="294" alt="site logo">
+               <img src="images/logo/Asset%201.svg" height="90" width="176" alt="site logo">
            </a> 
-             <div class="navlinks">
-                 <a class="clickable_links" href="why-play.html" title="why play soccer?">Why play?</a>
+           <div>
+               <div class="navwrap">
+                         <a class="clickable_links" href="why-play.html" title="why play soccer?">Why play?</a>  
+                         <a class="clickable_links" href="news.html" title="all news">News</a> 
+                         <a class="clickable_links" href="about_us.html" title="who we are">About us</a>
+                         <a class="clickable_links" href="competitions.html" title="league competitions">Competitions
+                         </a>
+                </div>
+                <form role="search">   
+                        <input type="text" placeholder=" Search...." name="search">
+                        <button type="submit">
+                            <img src="images/search.GIF" alt="search bar icon" height="15" width="15">
+                        </button>   
+                </form> 
             </div>
-               
-                
-             <div class="navlinks">  
-                 <a class="clickable_links" href="news.html" title="all news">News</a>
-            </div>
-              
-             <div class="navlinks">   
-                 <a class="clickable_links" href="about_us.html" title="who we are">About us</a>
-            </div>
-             
-             <div class="navlinks"> 
-                 <a class="clickable_links" href="competitions.html" title="league competitions">Competitions</a></div>
-               <form role="search">   
-                    <input type="text" placeholder=" Search...." name="search">
-                    <button type="submit">
-                        <img src="images/search.GIF" alt="search bar icon" height="15" width="15">
-                    </button>   
-                </form>  
+            <label>
+               <img src="images/hamburger%20icon.svg" alt="drop-down icon"> 
+                <input type="checkbox" id="touch">
+                <div id="nav-mobile">
+                    <div>
+                        <a class="clickable_links" href="why-play.html" title="why play soccer?">Why play?</a>
+                    </div>
+                    <div>
+                        <a class="clickable_links" href="news.html" title="all news">News</a>
+                    </div>
+                    <div>
+                        <a class="clickable_links" href="about_us.html" title="who we are">About us</a>
+                    </div>
+                    <div>
+                        <a class="clickable_links" href="competitions.html" title="league competitions">Competitions
+                         </a>
+                    </div>
+                    <form role="search">   
+                        <input type="text" placeholder=" Search...." name="search">
+                        <button type="submit">
+                            <img src="images/search.GIF" alt="search bar icon" height="15" width="15">
+                        </button>   
+                    </form> 
+               </div>
+           </label>
     </nav>
-            <header><h1 class="mainheader">News</h1></header>
-            <main id="news_main">
-                <div>
+            <header class="page_header">
+                <h1 class="h1-2">News</h1>
+            </header>
+            <main>
                     <article class="competitionsarticles">
-                          <h2 class="headerpadding">Ut enim ad minima veniam</h2>
-                        <p class="paragraph_news">3 days ago</p>
-                        <p>sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.</p>
+                        <section class="article_dashed">
+                              <h2 class="headerpadding">Ut enim ad minima veniam.</h2>
+                            <p class="paragraph_news">3 days ago</p>
+                            <p>sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.</p>
+                        </section>
+                        <img src="images/newsimages/AdobeStock_182621900shoesball.png" alt="boots and ball on grass" class="competitionimg">
                     </article>
                     <article class="competitionsarticles">
-                        <h2 class="headerpadding">quis nostrum exercitationem ullam corporis suscipit laboriosam</h2>
-                        <p class="paragraph_news">6 days ago</p><p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati. 
-                        </p>
+                        <section class="article_dashed">
+                            <h2 class="headerpadding">quis nostrum exercitationem ullam corporis suscipit laboriosam.</h2>
+                            <p class="paragraph_news">6 days ago</p><p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati. 
+                            </p>
+                        </section>
+                        <img src="images/newsimages/AdobeStock_126763991floodlights.png" alt="pitch floodlights" class="competitionimg">
                     </article>
                      <article class="competitionsarticles">
-                         <h2 class="headerpadding">nisi ut aliquid ex ea commodi consequatur</h2>
-                         <p class="paragraph_news">2 weeks ago</p>
-                         <p>aliquam quaerat voluptatem. Ut enim ad minima veniam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
+                         <section class="article_dashed">
+                             <h2 class="headerpadding">nisi ut aliquid ex ea commodi consequatur.</h2>
+                             <p class="paragraph_news">2 weeks ago</p>
+                             <p>aliquam quaerat voluptatem. Ut enim ad minima veniam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
+                        </section>
+                        <img src="images/newsimages/AdobeStock_338736832(1)coach.png" alt="coach and children" class="competitionimg">
                     </article>
                     <article class="competitionsarticles">
-                        <h2 class="headerpadding">adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam</h2>
-                        <p class="paragraph_news">1 month ago</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <section class="article_dashed">
+                            <h2 class="headerpadding">adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam.</h2>
+                            <p class="paragraph_news">1 month ago</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </section>
+                        <img src="images/newsimages/AdobeStock_375466698indoorsoccercourt.png" alt="view of indoor soccer court" class="competitionimg">
                     </article>
                     <article class="competitionsarticles">
-                        <h2 class="headerpadding">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</h2>
-                        <p class="paragraph_news">1 month ago</p>
-                        <p> omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
+                        <section class="article_dashed">
+                            <h2 class="headerpadding">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</h2>
+                            <p class="paragraph_news">1 month ago</p>
+                            <p> omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
+                        </section>
+                        <img src="images/newsimages/kidshuddled.png" alt="children huddled together" class="competitionimg">
                     </article>
                     <article class="competitionsarticles">
-                         <h2 class="headerpadding">eaque ipsa quae ab illo inventore veritatis</h2>
-                        <p class="paragraph_news">2 months ago</p>
-                        <p>et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <section class="article_dashed">
+                             <h2 class="headerpadding">eaque ipsa quae ab illo inventore veritatis.</h2>
+                            <p class="paragraph_news">2 months ago</p>
+                            <p>et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </section>
+                        <img src="images/newsimages/AdobeStock_202671323(1)wetpitch.png" alt="wet socce pitch" class="competitionimg">
                     </article>
+                <div aria-label="navigate news pages" id="news_navigation">
+                    <div>
+                        <img src="images/directionalarrows_left.svg" alt="navigational arrow left" width="56" height="37"> 
+                        <span class="previous_page">previous page</span>
+                    </div>
+                    <div>
+                        <span class="next_page">next page </span>
+                        <img src="images/directionalarrows_right.svg" alt="navigational arrow right" width="56" height="37">
+                    </div>
                 </div>
-                <div id="div_competitions">
-                    <img src="images/newsimages/AdobeStock_182621900shoesball.png" alt="boots and ball on grass" class="competitions_images" id="news_image_1">
-                    <img src="images/newsimages/AdobeStock_126763991floodlights.png" alt="pitch floodlights" class="competitions_images" id="news_image_2">
-                    <img src="images/newsimages/AdobeStock_338736832(1)coach.png" alt="coach and children" class="competitions_images" id="news_image_3">
-                    <img src="images/newsimages/AdobeStock_375466698indoorsoccercourt.png" alt="view of indoor soccer court" class="competitions_images" id="news_image_4">
-                     <img src="images/newsimages/kidshuddled.png" alt="children huddled together" class="competitions_images" id="news_image_5">
-                     <img src="images/newsimages/AdobeStock_202671323(1)wetpitch.png" alt="wet socce pitch" class="competitions_images" id="news_image_6">
-                </div>    
             </main>
-            <div id="news_navigation">
-                    <img src="images/directionalarrows_left.svg" alt="navigational arrow left" width="56" height="37"> 
-                    <div id="previous_page">previous page</div>
-                    <div id="next_page">next page </div>
-                    <img src="images/directionalarrows_right.svg" alt="navigational arrow right" width="56" height="37">
-                </div>
-  <footer>
-                    <img src="images/logo/Asset%201.svg" height="150" width="294" alt="site logo">
+      <footer>
+            <img src="images/logo/Asset%201.svg" alt="site logo">
            <div id="footer">
-            <div id="bottomlinks">
-                
-                    <a href="find_us_page.html">Find us</a>
-                    <a href="privacy_statement.html">Privacy statement</a>
-                    <a href="downloads.html">Downloads</a>
-                    <a href="contact_us.html">Contact us</a>
-                </div>
-<!--media links-->
-                 <div id="medialinks">
-                    <a href="https://www.youtube.com/user/FootballWestTV" target="_blank"><img src=images/media_icons/youtubeicon.svg width="40" height="40" alt="youtube social link"></a>
-                    <a href="https://twitter.com/footballwest?lang=en" target="_blank"><img src="images/media_icons/twitter.svg" width="40" height="40" alt="twitter social link"></a>
-                    <a href="https://www.facebook.com/FootballWest/" target="_blank"><img src="images/media_icons/facebook-logo-3-1.svg" width="40" height="40" alt="facebook social link"></a>
-                    <a href="https://www.instagram.com/footballwest/?hl=en" target="_blank"><img src="images/media_icons/Black-icon-Instagram-logo-transparent.svg" width="40" height="40" alt="instagram social link"></a>
-                </div>
-                <div id="copyright">&copy; 
-                    2023 Stirling Soccer Centre
-                </div>
+                <div id="bottomlinks">
+                        <a href="find_us_page.html">Find us</a>
+                        <a href="privacy_statement.html">Privacy statement</a>
+                        <a href="downloads.html">Downloads</a>
+                        <a href="contact_us.html">Contact us</a>
+                    </div>
+                        <div id="div-footer">
+            <!--media links-->
+                             <div id="medialinks">
+                                <a href="https://www.youtube.com/user/FootballWestTV" target="_blank"><img src=images/media_icons/youtubeicon.svg alt="youtube social link"></a>
+                                <a href="https://twitter.com/footballwest?lang=en" target="_blank"><img src="images/media_icons/twitter.svg" alt="twitter social link"></a>
+                                <a href="https://www.facebook.com/FootballWest/" target="_blank"><img src="images/media_icons/facebook-logo-3-1.svg" alt="facebook social link"></a>
+                                <a href="https://www.instagram.com/footballwest/?hl=en" target="_blank"><img src="images/media_icons/Black-icon-Instagram-logo-transparent.svg" alt="instagram social link"></a>
+                            </div>
+                            <div id="copyright">&copy; 
+                                2023 Stirling Soccer Centre
+                            </div>
+                    </div>
             </div>
                 
         </footer>
