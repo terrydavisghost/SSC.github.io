@@ -11,32 +11,52 @@
 nav
     {background-color: RGBA(240, 80, 10, 1);
     font-family: "Russo one";
-    height: 170px;
-    margin-left: 0;
+    height: auto;
+    padding: 10px 0px;
     position: sticky;
     top: 0;
     z-index: 3;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-       
 }
-
-
-
-
-
 /* z-indexes are semantically significant as they are used to indicate what the stacking order is for elements, that is to say they show what overlaps and goes on top of what
 ----------------------------------------
 */
 
+#touch{
+   display: none;
+}
+
+#nav-mobile{
+    display: none;
+}
+
+nav>div{
+    display: flex;
+    width: 80%;
+}
+
+nav label{
+    display: none;
+}
+
+nav label>img{
+    width: 50px;
+    height: 50px;
+    margin-right: 50px;
+}
+
+.navwrap{
+   flex: 5 1 60%; 
+    display: flex;
+    justify-content: space-between;
+}
 
 .clickable_links
     {color: white;
     padding: 10px 20px 10px 20px;
     font-size: 1.2em;
-    margin-right: 20px;
 }
 
 /* the pseudo class ":hover" as a selector allows me to add properties to nav a at a special state
@@ -46,18 +66,22 @@ nav
 .clickable_links:hover
     {background-color: RGBA(30,30,30,1);}
 
-form
-    {
-  margin-left: 300px;
-  flex: 1; 
-    }
+nav form{
+    flex: 1 5 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px; 
+}
 
-input
-    {font-family: "Kanit";}
+nav input{
+    font-family: "Kanit";
+    height: 30px;
+    margin-right: 10px;
+}
 
-button 
-{
-width: 25.2px;
+button{
+    width: 25.2px;
     height: 25.2px;
     background-color: white;
     border: none;
@@ -69,20 +93,9 @@ width: 25.2px;
 */
 
 #image_register{
-     position: absolute;
-    top: 470px;
-    left: 650px;
+
 }
 
-#registration_header{
-    margin-left: 50px;
-    margin-bottom: 50px;
-    width: 600px;
-    height: 120px;
-}
-
-
-   
 
 #registration_form
     {border-style: dotted;
@@ -105,70 +118,50 @@ width: 25.2px;
     flex-direction: row;
 }
 
-.competitions_images{
-    border-style: solid;
-    border-color: azure;
-    border-width: 40px;
-}
-
 #competitionimg_2{
     margin-top: 300px;
 }
 
-#competitionimg_2{
-    margin-top: 300px;
+p[class="headerpadding"]{
+    font-weight: bold;
 }
 
-#competitionimg_2{
-    margin-top: 300px;
-}
 
 /* ABOUT US PAGE
 ----------------------------------------
 */
+
+.about-img{
+    width: 50%;
+    height: auto;
+}
+
 blockquote{
     font-style: italic;
     font-family: "Russo one";
 	font-size: 2em;
     background-color: RGBA(180,180,180,1);
     padding: 20px;
-    width: 600px;
-    height: 150px;
-    position: absolute;
-    right: 100px;
-    align-self: baseline;
-    border-style: solid;
-    border-color: azure;
-    border-width: 40px;
-    z-index: 2;}
-
-.mainarticles2
-    {
-    margin-left: 50px;
-    padding-left: 20px;
-    padding-bottom: 20px;
-    padding-right: 180px;
-    border-style: dotted;
-    margin-bottom: 130px;
-    margin-right: 30px;
-    width: 580px;
-    height: 750px;
-    color: black;
-    flex-shrink: 1;
-    z-index: 1}
+    width: 40%;
+    align-self: flex-end;
+    }
 
 /* HOME PAGE
 ----------------------------------------
 */
+
 #home_page_header{
-    margin-left: 50px;
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
-    align-items: center;
-    width: 1400px;
-    height: 700px;
+    width: 74%;
+    position: relative;
+    margin: 30px auto;
 }
 
+#home_page_header img{
+    width: 100%;
+    height: auto;
+}
 
 #register_heading:hover{
     background-color: RGBA(30,30,30,1);
@@ -176,14 +169,13 @@ blockquote{
 
 #register_heading{
     z-index: 1;
-    width: 400px;
-    height: 130px;
+    margin: 0;
     }
 
 #registerheaderlink{
-    position: relative;
-    right: 200px;
-    
+    position: absolute;
+    left: 75%; 
+    top: 40%;
 }
 
 #header_news_aside{
@@ -194,53 +186,51 @@ blockquote{
 
 #homemaindiv
     {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    flex-basis: 50%;   
-    margin-top: 200px; 
-    margin-bottom: 200px;
-    height: 1490px;
+    display: grid;
+    grid-template-areas: 'art1 art1 art1 aside'
+                'art2 art2 art2 aside'
+                'art3 art3 art3 aside'
+                'tournament tournament tournament tournament'
+                'tournament tournament tournament tournament';
+    grid-row-gap: 130px;
+    grid-column-gap: 12%;
 }
+
 
 /* margin properties are used in css to spread elements apart and provide structure and layout
 ----------------------------------------
 */
 
-.mainarticles
+.mainarticles 
     {
-    margin-left: 50px;
-    padding-left: 20px;
-    padding-bottom: 20px;
-    padding-right: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
     border-style: dotted;
-    margin-bottom: 130px;
-    width: 580px;
-    height: 300px;
     color: black;
-    flex-shrink: 1;}
+    margin-left: 4%;
+}
 
-section:first-child{
-    margin-bottom: 140px;
+#art1{
+    grid-area: art1;
+}
+
+#art2{
+    grid-area: art2;
+}
+
+#art3{
+    grid-area: art3;
+}
+
+.mainarticles p{
+    width: 70%;
 }
 
 #about_main{
     display: inline-flex;
 }
-
-.linkbutton
-    {font-family: "Kanit";
-    border-style: solid;
-    border-color: RGBA(30,30,30,1);
-    padding: 5px 10px 5px 10px;
-    position: relative;
-    top: 80px;
-    background-color: RGBA(240, 80, 10, 1);
-    color: black;}
-
-.linkbutton:hover
-    {background-color: white;}
 
 #sendform:hover{
     background-color: white;
@@ -248,86 +238,87 @@ section:first-child{
 
 #tournament_container
     {background-color: RGBA(30,30,30,1);
-    width: 1519.2px;
-    height: 700px;
+    width: 100%;
+    height: auto;
     color: white;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;}
+    flex-direction: column;
+    grid-area:  tournament;
+}
 
 #tournament_text 
     {padding-left: 50px;
-        padding-right: 300px;
-    height: 350px;
-        margin: 0;
-        width: inherit;
+        margin-bottom: 100px;
+        width: 70%;
    }
 
 #tournament_images
     {display: inline-flex;
-    align-self: baseline;
-    height: 519px;
-    margin-top: 0;
+    align-items: center;
+    height: auto;
+    background-color: RGBA(240, 80, 10, 1);
+    padding: 30px;
+    width: 100%;
+    box-sizing: border-box;
    }
+
+#tournament_images img{
+    width: 100%;
+    height: auto;
+}
 
 /* padding filled with the background colour property creates quadrilateral shapes that give the web pages structure and visual appeal
 ----------------------------------------
 */
 
 aside
-    {height: inherit;
-          background-color: RGBA(30,30,30,1);
-        width: 445px;
+    {   
+        grid-area: aside;
+        background-color: RGBA(30,30,30,1);
         color: white;
-        align-self: flex-end;
-        margin-right: 50px;
+        font-family: "Kanit";
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
 }
 
-ul
-    {
-     font-family: "Kanit";
-    padding-right: 20px;
-    padding-bottom: 20px;}
-
-
-
-li p:last-child
+aside section p:last-child
     {font-size: 0.8em;}
+
+aside div:last-child{
+    margin-top: 50px;
+}
+
+.headerpaddingaside{
+    align-self: flex-start;
+}
 
 /* WHY PLAY PAGE
 ----------------------------------------
 */
 
-#container_whyplay img{
- position: relative;
-    top: 130px;
-    right: 170px;
-}
-
-.mainarticles3
-    {
-    margin-left: 50px;
-    padding-left: 20px;
-    padding-bottom: 20px;
-    padding-right: 180px;
-    border-style: dotted;
-    margin-bottom: 130px;
-    margin-right: 30px;
-    width: 550px;
-    height: 600px;
-    color: black;
-    }
-
-#headerwhyplay{
-    background-color: RGBA(240, 80, 10, 1);
+#article_dashed2{
     padding: 20px 20px;
-  
+    width: 55%;
+    border-style: dotted;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-bottom: 50px;
+    margin-right: 20%;
 }
 
-#container_whyplay{
-    display: inline-flex;
-    flex-direction: row;
-     width: 1519.2px;
+#article_dashed2 p {
+    width: 70%;
+}
+
+#article_dashed2 img{
+    position: absolute;
+    width: 30%;
+    height: auto;
+    left: 55%;
+    top: 80%;
 }
 
 /* NEWS PAGE
@@ -338,36 +329,24 @@ li p:last-child
     padding: 30px 20px; 
     background-color: RGBA(30,30,30,1);
     color: white;
-    
+    width: 380px;
+    margin-top: 80px;
     display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 509.6px;
-    margin-bottom: 170px;
+    justify-content: space-between;
+    align-self: center;
 }
 
-#previous_page{
-    font-size: 1.4em;
-    margin-left: 10px;
-    margin-right: 20px;
+#news_navigation img{
+    margin: 0px 10px;
 }
 
-.mainheader{
-    margin-left: 50px;
-    margin-bottom: 50px;
-    width: 500px;
-}
-
-#next_page{
-    font-size: 1.4em;
-    margin-left: 20px;
-    margin-right: 10px;
-}
-
-#news_main{
+#news_navigation div{
     display: flex;
-    font-size: 1em;
-    height: 3800px;
+    align-items: center;
+}
+
+.page{
+    font-size: 2em;
 }
 
 .paragraph_news{
@@ -375,132 +354,53 @@ li p:last-child
     margin-bottom: 20px;
 }
 
-#news_image_1{
-    margin-top: 50px;
-}
-
-#news_image_2{
-    margin-top: 245px;
-}
-
-#news_image_3{
-    margin-top: 245px;
-}
-
-#news_image_4{
-    margin-top: 230px;
-}
-
-#news_image_5{
-    margin-top: 240px;
-}
-
-#news_image_6{
-    margin-top: 240px;
-}
-
 /* FIND US PAGE
 ----------------------------------------
 */
 
-.findus_header{
-    margin-left: 513.8165px;
-    width: 450px;
+iframe{
+    height: 450px;
+    width: 600px;
+    align-self: center;
 }
 
-iframe{
-    margin-left: 359.6px;
-}
+
 
 /* COMPETITIONS PAGE
 ----------------------------------------
 */
-#div_competitions{
-    position: relative;
-    right: 180px;
-}
 
-#competitionimg_1,#competitionimg_2,#competitionimg_3{
-    border-style: solid;
-    border-color: azure;
-    border-width: 40px;
-}
-
-#competitionimg_1{
-    margin-top: 60px;
-}
-
-#competitionimg_2{
-    margin-top: 230px;
-}
-
-#competitionimg_3{
-    margin-top: 240px;
+.competitionimg{
+    width: 30%;
+    height: auto;
 }
 
 .competitionsarticles
-    {
-    margin-left: 50px;
-    padding-left: 20px;
-    padding-bottom: 20px;
-    padding-right: 180px;
-    border-style: dotted;
-    margin-bottom: 130px;
-    width: 580px;
-    height: 500px;
-    color: black;
-    flex-shrink: 1;}
+    {width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 /* PRIVACY STATEMENT PAGE
 ----------------------------------------
 */
-#container_privacy{
-  padding: 20px 20px;
-    margin-left: 459.6px;
-    margin-bottom: 170px;
-    width: 560px;
-    border-style: dotted;
-    display: flex;
-    flex-direction: row;
-    height: 1260px;
-}
 
-#header_privacy
-    {font-family: "Russo one";
-	font-size: 3em;
-	font-weight: 700;
-    background-color: RGBA(240, 80, 10, 1);
-    padding: 15px;
-        width: 500px;
-        margin-left: 493.25px;
-        color: white;}
 
 /* DOWNLOADS PAGE
 ----------------------------------------
 */
 
-#downloads_list{
-    font-family: "Kanit";
-    width: 200px;
-    margin-bottom: 10px;
-}
-
-.download_icons{
-    
+.download_icons{   
     background-color: RGBA(240, 80, 10, 1);
 }
 
-#downloads_header{
-    margin-left: 436.7px;
-    width: 600px;
-}
-
-#main_downloads{
-    
+#downloads_list{
+    font-family: "Kanit";
     border-style: dotted;
     padding: 4px 20px;
-    margin-left: 536.6px;
     width: 300px;
+    align-self: center;
 }
 
 .icons_container{
@@ -521,31 +421,16 @@ iframe{
 /* CONTACT US PAGE
 ----------------------------------------
 */
-#main_contact{
-    padding: 20px 20px;
-    margin-left: 459.6px;
-    width: 600px;
-    border-style: dotted;
-}
-
-.contactus_header{
-    margin-left: 589.8835px;
-    width: 300px;
-}
 
 #contact_div{
     display: inline-flex;
     flex-direction: row;
-    width: inherit;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-#headercontact{
-    margin-left: 23px;
-     background-color: RGBA(240, 80, 10, 1);
-    padding: 20px 20px;
-    margin-top: 80px;
-    width: 500px;
+#contact_div a{
+    flex-basis: 25%;
 }
 
 /* COMPLETED FORM PAGE
@@ -570,14 +455,14 @@ iframe{
 footer
     {font-family: "Kanit";
      background-color: RGBA(240, 80, 10, 1);
-     height: 260px;
-        width: 100%;
+     height: auto;
+    width: 100%;
+        padding: 30px 0px;
      color: white;
-        display: flex;
+    display: flex;
     flex-direction: row;
-   flex-wrap: wrap;
-        flex-basis: 50%;
-        align-items: center;}
+    justify-content: space-between;
+    align-items: center;}
 
 /* ids are used in the divs here since i am intending to only select one element per each selector
 ----------------------------------------
@@ -586,29 +471,47 @@ footer
 
 #copyright
     {
-    font-size: 0.8em;
-    margin-right: 50px;
+    font-size: 0.6em;
+    width: 30%;
+    align-self: flex-end;
     }
 
 #footer
     {display: flex;
-    width: 820px;
-    justify-content: flex-end;
+    flex: 3 1 65%;
+    justify-content: space-around;
     flex-wrap: wrap;
-    height: inherit;
+
     align-items: center;
-    margin-left: 180px;
+    height: 100%;
+}
+
+footer>img{
+    flex: 1 3 20%;
+    height: 150px;
+    width: 294px;
+}
+
+#div-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
 }
 
 #bottomlinks
-    {font-size: 1.3em;
-    flex-basis: 100%;
+    {font-size: 1em;
+    width: 80%;
+        margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
 
 #bottomlinks a
     {color: white;
        padding: 10px 20px 10px 20px;
-    margin-left: 50px;}
+}
 
 
 #bottomlinks a:hover
@@ -616,12 +519,16 @@ footer
 
 
 #medialinks
-    {width: 535.9px;
-   
+    {width: 45%;
+    display: flex;
+    justify-content: space-between;
     }
 
-#medialinks a
-    {margin: 0px 25px 0px 25px;}
+#medialinks img{
+    width: 40px;
+    height: 40px;
+    padding: 0px 15px;
+}
 
 footer img
     {align-self: center}
@@ -629,27 +536,24 @@ footer img
 /* COURT REGISTRATION FORM
 ----------------------------------------
 */
-.header
-    {width: 710px;
-   padding-top: 20px;
-    margin-left: 63px;}
 
-#court_hire_wrapper{
-    margin-left: 306.6px;
+.article_dashed_hire{
+    padding: 20px 20px;
+    width: 65%;
+    border-style: dotted;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-bottom: 50px;
+    margin-top: 150px;
+    font-family: "Kanit";
 }
 
-#court_hire
-    {border-style: dotted;
-    font-family: "Kanit";
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 860px;
-    height: 1300px; 
-    padding: 20px 20px;}
 
 .writing
     {width: 300px;
+    height: 30px;
+    margin-left: 15px;
     }
 
 
@@ -657,106 +561,111 @@ footer img
     {background-color: RGBA(180,180,180,1);
     margin: 5px;
     width: 130px;
-    height: 150px;
+
     padding: 10px 10px;
     display: inline-flex;
     flex-direction: row;
    }
 
-.selectionlist p{
-    margin-bottom: 10px;
+#checkbox{
+    height: 230px;
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 10px;
+    background-color: RGBA(180,180,180,1);
+    margin-bottom: 15px;
 }
 
-#hhhjjhj{
-    height: inherit;
-    width: 50px;
-}
-
-#vcbnbgf{
-    height: inherit;
+.selection{
+    height: 20px;
     width: 20px;
 }
 
-.selection
-    {background-color: RGBA(180,180,180,1);
-    margin: 5px;
-    width: 35px;
-    height: 15px;
-    padding: 10px 10px;}
+#checkbox div{
+   display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
 
 .textentry
     {background-color: RGBA(180,180,180,1);
-    margin: 5px ;
-    width: 900px;
+    display: flex;
+    flex-direction: row;
     height: 50px;
-    padding: 10px 10px;}
-
-.textentry2
-    {background-color: RGBA(180,180,180,1);
-    margin: 5px 400px 5px 5px;
-    width: 900px;
-    height: 240px;
-    padding: 10px;}
+     width: 70%;
+    padding: 10px 10px;
+    margin-bottom: 15px;}
 
 .court_hire_heading_grey
-   {width: 450px;
-    font-family: "Kanit";
+   {
     padding: 5px 10px 5px 10px;
     background-color: RGBA(180,180,180,1);
-        margin: 5px;
-       flex-basis: 100%;
+    margin-bottom: 15px;
+    width: 70%;
 }
 
 .court_hire_heading_orange{
-    width: 900px;
-    font-family: "Kanit";
     padding: 5px 10px 5px 10px;
-    background-color: RGBA(240, 80, 10, 1);
-        margin: 5px ;
+    background-color: coral;
+    margin-bottom: 15px;
 }
-
-#sendform
-    {font-family: "Kanit";
-    border-style: solid;
-    border-color: RGBA(30,30,30,1);
-    padding: 5px 10px 5px 10px;
-    background-color: RGBA(240, 80, 10, 1);
-    color: black;
-    height: 24px;
-    position: relative;
-    top: 25px;}
-
-label
-    {width: 20px;}
 
 textarea{
     resize: none;
+    margin-bottom: 80px;
+    width: 580px;
+    height: 220px;
 }
 
 /*GLOBAL STYLES
 ----------------------------------------
 */
 
-body {
-    
+.linkbutton
+    {font-family: "Kanit";
+    border-style: solid;
+    border-color: RGBA(30,30,30,1);
+    padding: 5px 10px 5px 10px;   
+    background-color: coral;
+    margin-top: 30px;
+    color: black;
+    width: auto;
+    font-weight: 500}
+
+.linkbutton:hover
+    {background-color: white;}
+
+
+.page_header{
+    width: 55%;
+    margin: 30px auto;
+    display: flex;
+}
+
+body {  
     background-color: azure;
     margin: 0px;
-    min-height: 60%;
     color: black;
-max-width: 1519.2px}
+}
 
-p
+
+p, ul
     {font-family: "Kanit";}
 
 main
-    {margin-bottom:170px;}
+    {margin: 100px 0px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
 
 h1 
     {font-family: "Russo one";
 	font-size: 3em;
 	font-weight: 700;
     background-color: RGBA(240, 80, 10, 1);
-    height: 70px;
     padding: 20px;
     color: white;
 }
@@ -764,6 +673,16 @@ h1
 h1 a:hover
      {background-color: black;}
 
+.h1-2
+    {font-family: "Russo one";
+	font-size: 3em;
+	font-weight: 700;
+    background-color: RGBA(240, 80, 10, 1);
+    padding: 15px;
+    float: left;
+    color: white;
+    box-sizing: border-box;
+}
 
 h2 {
     font-family: "Russo one";
@@ -772,14 +691,10 @@ h2 {
     color: black;
 }
 
-.headerpadding{
-    background-color: RGBA(240, 80, 10, 1);
+.headerpadding, .headerpaddingaside{
+    background-color: coral;
     padding: 20px 20px;
-    width: 500px;
-}
-
-aside h2{
-    margin-left: 40px;
+    width: 60%;
 }
 
 h2 a:hover
@@ -789,25 +704,253 @@ a {
     text-decoration: none;
 }
 
+.article_dashed{
+    padding: 20px 20px;
+    width: 50%;
+    border-style: dotted;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-bottom: 50px;
+}
 
 
 @media screen and (max-width: 1000px){
-    nav{
-        flex-basis: 50%;
-        flex-wrap: wrap;
-        height: 300px;     
-       }   
-    footer{
-        flex-basis: 50%;
-        flex-wrap: wrap;
-        height: 450px;     
+    
+    nav>div{
+        display: none;
        }  
-    form
-        {
-      margin-left: 80px;
-        }
+    
+    nav label{
+        display: inline;
+    }
+    
+    nav form{
+        flex: 0 1 20%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 0px; 
+    }
+    
+    .competitionsarticles
+    {flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
 }
 
-/*two sets of fonts to use throughout the html documents: one for the headings and the other for the body texts
-----------------------------------------
-*/
+    .competitionimg{
+    width: 60%;
+    height: auto;
+}
+
+
+    #medialinks img{
+    width: 30px;
+    height: 30px;
+}
+    
+    #homemaindiv
+    {
+    grid-template-areas: '... art1 art1 art1 ...'
+                '... art2 art2 art2 ...'
+                '... art3 art3 art3 ...'
+                'aside aside aside aside aside'
+                'tournament tournament tournament tournament tournament';
+      grid-column-gap: 0%;
+}
+    
+    #article_dashed2 img{
+    position: absolute;
+    width: 30%;
+    height: auto;
+    left: 55%;
+    top: 100%;
+}
+
+
+    
+    aside{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    aside section{
+        flex-basis: 45%;
+    }
+    
+    aside div{
+        flex-basis: 100%;
+    }
+
+    .mainarticles 
+    {
+    margin-left: 0%;
+}
+    
+    #register_heading{
+    font-size: 2em;
+    }
+    
+    #registerheaderlink{
+    left: 80%; 
+    top: 40%;
+}
+
+    #touch:checked ~ #nav-mobile{
+        display: flex;
+        flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    height: 370px;
+    background-color: RGBA(240, 80, 10, 1);
+    right: 25px;
+    top: 110px;
+    padding: 30px 20px 30px 20px;
+    }
+    
+    #tournament_images{
+        flex-direction: column;
+        padding: 0px;
+    }
+    
+    #tournament_images img{
+    width: 70%;
+}
+    .article_dashed{
+    width: 70%;
+}
+    textarea{
+    width: 480px;
+    height: 320px;
+}
+
+}
+
+
+@media screen and (max-width: 800px){
+    
+    #register_heading{
+    font-size: 1.5em;
+    }
+    
+    .article_dashed_hire{
+    width: 85%;
+}
+    
+    .page_header{
+    width: 75%;
+    margin: 30px auto;
+    display: flex;
+}
+    
+    #contact_div a{
+    flex-basis: 50%;
+        margin-top: 25px;
+}
+    
+    #registerheaderlink{
+    left: 70%; 
+    top: 30%;
+}
+        .linkbutton{
+    font-size: 0.8em;    
+    }
+    
+    h2{
+        font-size: 1em;
+    }
+
+    p{
+        font-size: 0.8em;
+    }
+    
+    textarea{
+    width: 380px;
+    height: 420px;
+}
+    
+    blockquote{
+        font-size: 1.5em;
+    }
+    
+    .textentry{
+        flex-direction: column;
+        width: 90%;
+    }
+      
+    #div-footer{
+    width: 100%;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+    #copyright{
+        align-self: auto;
+        width: 100%;
+        justify-content: flex-end;
+        display: flex;
+        padding-right: 20px;
+        box-sizing: border-box
+    }
+ 
+    #bottomlinks
+    {
+    width: 100%;
+  }
+    
+    footer>img{
+    height: 112px;
+    width: 220px;
+}
+
+#article_dashed2{
+    width: 50%;
+    margin-right: 0%;
+}
+
+#article_dashed2 img{
+    position:relative;
+    width: 90%;
+    align-self: center;
+    height: auto;
+    left: auto;
+    top: auto;
+}
+    
+.about-img{
+    width: 80%;
+    height: auto;
+}
+    
+iframe{
+    height: 315px;
+    width: 420px;
+    align-self: center;
+}
+    
+    #bottomlinks{
+        margin-bottom: 0px;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    
+    #register_heading{
+    font-size: 1em;
+    }
+    
+    #registerheaderlink{
+    left: 70%; 
+    top: 40%;
+}
+    
+     footer>img{
+    height: 84px;
+    width: 165px;
+}
+
+}
