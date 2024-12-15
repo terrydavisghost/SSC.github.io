@@ -12,121 +12,137 @@
     </head>
     <body>
 <!--navigational bar where all elements will be aligned horizontally-->
-       <nav> 
+        <nav> 
            <a href="index.html">
-               <img src="images/logo/Asset%201.svg" height="150" width="294" alt="site logo">
+               <img src="images/logo/Asset%201.svg" height="90" width="176" alt="site logo">
            </a> 
-             <div class="navlinks">
-                 <a class="clickable_links" href="why-play.html" title="why play soccer?">Why play?</a>
+           <div>
+               <div class="navwrap">
+                         <a class="clickable_links" href="why-play.html" title="why play soccer?">Why play?</a>  
+                         <a class="clickable_links" href="news.html" title="all news">News</a> 
+                         <a class="clickable_links" href="about_us.html" title="who we are">About us</a>
+                         <a class="clickable_links" href="competitions.html" title="league competitions">Competitions
+                         </a>
+                </div>
+                <form role="search">   
+                        <input type="text" placeholder=" Search...." name="search">
+                        <button type="submit">
+                            <img src="images/search.GIF" alt="search bar icon" height="15" width="15">
+                        </button>   
+                </form> 
             </div>
-               
-                
-             <div class="navlinks">  
-                 <a class="clickable_links" href="news.html" title="all news">News</a>
-            </div>
-              
-             <div class="navlinks">   
-                 <a class="clickable_links" href="about_us.html" title="who we are">About us</a>
-            </div>
-             
-             <div class="navlinks"> 
-                 <a class="clickable_links" href="competitions.html" title="league competitions">Competitions</a></div>
-               <form role="search">   
-                    <input type="text" placeholder=" Search...." name="search">
-                    <button type="submit">
-                        <img src="images/search.GIF" alt="search bar icon" height="15" width="15">
-                    </button>   
-                </form>  
-           
-        </nav>
-    <div id="court_hire_wrapper">
-        <header><h1 class="header">Court hire registration form</h1>
-        </header>
-        <main id="court_hire">
-            <p class="court_hire_heading_orange">mandatory completion:</p>
-                <div class="textentry">
-                    first name:
-                    <input class="writing" type="text"
-                    placeholder="type here..."
-                    name="text">
-                </div>
-                <div class="textentry">
-                    last name:
-                     <input class="writing" type="text"
-                    placeholder="type here..."
-                    name="text">
-                </div>
-                 <div class="textentry">
-                    email address:
-                    <input class="writing" type="text"
-                    placeholder="type here..."
-                    name="text">
-                </div>
-                 <div class="textentry">
-                   phone number:
-                    <input class="writing" type="text"
-                    placeholder="type here..."
-                    name="text">
-                </div>
-                
-                   
-                  
-<!--the radio input displays selectable circles and and giving them all the same name means only one from this group can be selected-->
-                 <p class="court_hire_heading_grey">hours being hired:</p>    
-            <div class="selectionlist">
-                         
-                         <div id="vcbnbgf">
-                         <label>0.5</label>
-                         <label>1</label>
-                         <label >1.5</label>
-                         <label>2</label>
-                         <label>2+</label>
-                        </div>
-                         <div id="hhhjjhj">
-                           <input class="selection" type="radio" name="group">
-
-                          <input class="selection" type="radio" name="group">
-
-                          <input class="selection" type="radio"  name="group">
-
-                          <input class="selection" type="radio"  name="group">
-
-                          <input class="selection" type="radio"  name="group">
-                        </div>
+            <label>
+               <img src="images/hamburger%20icon.svg" alt="drop-down icon"> 
+                <input type="checkbox" id="touch">
+                <div id="nav-mobile">
+                    <div>
+                        <a class="clickable_links" href="why-play.html" title="why play soccer?">Why play?</a>
                     </div>
-                         <p class="court_hire_heading_orange">voluntary completion:</p>
-<!--the text area element allows for a text input area that features more rows and columns than the standard input element gives-->
-                <p class="court_hire_heading_grey">additional comments:</p>   
-            <div class="textentry2">
-                   <textarea placeholder="type here..." rows="14" cols="57"></textarea>
-                </div>
-                <a id="sendform" href="completed_form.html" target="_blank">send form</a>
-                
-             
-        </main>
-    </div>
-       
-                 
-          <footer>
-                    <img src="images/logo/Asset%201.svg" height="150" width="294" alt="site logo">
+                    <div>
+                        <a class="clickable_links" href="news.html" title="all news">News</a>
+                    </div>
+                    <div>
+                        <a class="clickable_links" href="about_us.html" title="who we are">About us</a>
+                    </div>
+                    <div>
+                        <a class="clickable_links" href="competitions.html" title="league competitions">Competitions
+                         </a>
+                    </div>
+                    <form role="search">   
+                        <input type="text" placeholder=" Search...." name="search">
+                        <button type="submit">
+                            <img src="images/search.GIF" alt="search bar icon" height="15" width="15">
+                        </button>   
+                    </form> 
+               </div>
+           </label>
+    </nav>
+        <header class="page_header">
+            <h1 class="h1-2">Court hire registration form</h1>
+        </header>
+        <main>
+            <article class="article_dashed_hire">
+                        <div class="court_hire_heading_orange">mandatory completion</div>
+                            <div class="textentry">
+                                first name:
+                                <input class="writing" type="text"
+                                placeholder="type here..."
+                                name="text">
+                            </div>
+                            <div class="textentry">
+                                last name:
+                                 <input class="writing" type="text"
+                                placeholder="type here..."
+                                name="text">
+                            </div>
+                             <div class="textentry">
+                                email address:
+                                <input class="writing" type="text"
+                                placeholder="type here..."
+                                name="text">
+                            </div>
+                             <div class="textentry">
+                               phone number:
+                                <input class="writing" type="text"
+                                placeholder="type here..."
+                                name="text">
+                            </div>
+
+
+
+            <!--the radio input displays selectable circles and and giving them all the same name means only one from this group can be selected-->
+                             <div class="court_hire_heading_grey">hours being hired:</div>    
+                        <div aria-label="checkbox" id="checkbox">
+                                <div>
+                                    <label>0.5</label>
+                                     <label>1</label>
+                                     <label >1.5</label>
+                                     <label>2</label>
+                                     <label>2+</label>
+                                </div>
+                                <div>
+                                       <input class="selection" type="radio" name="group">
+                                      <input class="selection" type="radio" name="group">
+
+                                      <input class="selection" type="radio"  name="group">
+
+                                      <input class="selection" type="radio"  name="group">
+
+                                      <input class="selection" type="radio"  name="group">
+                                </div>
+                        </div>
+                                     <div class="court_hire_heading_orange">voluntary completion</div>
+            <!--the text area element allows for a text input area that features more rows and columns than the standard input element gives-->
+                            <div class="court_hire_heading_grey">additional comments:</div>   
+                            <div>
+                                <textarea placeholder="type here..."></textarea>
+                            </div>
+                            <div>
+                                 <a class="linkbutton">send form</a> 
+                            </div>
+            </article> 
+        </main>      
+            <footer>
+            <img src="images/logo/Asset%201.svg" alt="site logo">
            <div id="footer">
-            <div id="bottomlinks">
-                
-                    <a href="find_us_page.html">Find us</a>
-                    <a href="privacy_statement.html">Privacy statement</a>
-                    <a href="downloads.html">Downloads</a>
-                    <a href="contact_us.html">Contact us</a>
-                </div>
-<!--media links-->
-                 <div id="medialinks">
-                  <a href="https://www.youtube.com/user/FootballWestTV" target="_blank"><img src=images/media_icons/youtubeicon.svg width="40" height="40" alt="youtube social link"></a>
-                    <a href="https://twitter.com/footballwest?lang=en" target="_blank"><img src="images/media_icons/twitter.svg" width="40" height="40" alt="twitter social link"></a>
-                    <a href="https://www.facebook.com/FootballWest/" target="_blank"><img src="images/media_icons/facebook-logo-3-1.svg" width="40" height="40" alt="facebook social link"></a>
-                    <a href="https://www.instagram.com/footballwest/?hl=en" target="_blank"><img src="images/media_icons/Black-icon-Instagram-logo-transparent.svg" width="40" height="40" alt="instagram social link"></a>
-                </div>
-                <div id="copyright">&copy; 
-                    2023 Stirling Soccer Centre
-                </div>
+                <div id="bottomlinks">
+                        <a href="find_us_page.html">Find us</a>
+                        <a href="privacy_statement.html">Privacy statement</a>
+                        <a href="downloads.html">Downloads</a>
+                        <a href="contact_us.html">Contact us</a>
+                    </div>
+                        <div id="div-footer">
+            <!--media links-->
+                             <div id="medialinks">
+                                <a href="https://www.youtube.com/user/FootballWestTV" target="_blank"><img src=images/media_icons/youtubeicon.svg alt="youtube social link"></a>
+                                <a href="https://twitter.com/footballwest?lang=en" target="_blank"><img src="images/media_icons/twitter.svg" alt="twitter social link"></a>
+                                <a href="https://www.facebook.com/FootballWest/" target="_blank"><img src="images/media_icons/facebook-logo-3-1.svg" alt="facebook social link"></a>
+                                <a href="https://www.instagram.com/footballwest/?hl=en" target="_blank"><img src="images/media_icons/Black-icon-Instagram-logo-transparent.svg" alt="instagram social link"></a>
+                            </div>
+                            <div id="copyright">&copy; 
+                                2023 Stirling Soccer Centre
+                            </div>
+                    </div>
             </div>
                 
         </footer>
