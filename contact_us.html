@@ -6,22 +6,40 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="keywords" content="stirling soccer, stirling sports, sports centre, soccer centre, local sports, local soccer">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Stirling Soccer Centre</title>
+        <title>Stirling Soccer Centre - the best place for indoor and small soccer games in Perth.</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="icon" type="image/x-icon" href="images/logo/favicon.svg">
+        <link rel="canonical" href="https://terrydavisghost.github.io/SSC.github.io/">
+        <link rel="preconnect" href="//fonts.googleapis.com" crossorigin>
+        <meta property="og:title" content="How to contact us">
+        <meta property="og:image" content="https://terrydavisghost.github.io/SSC.github.io/images/logo/Asset%201.svg">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://terrydavisghost.github.io/SSC.github.io/contact_us.html">
+        <script type="application/ld+json">
+             {"@context": "https://schema.org",
+              "@type": "Event",
+              "name": "SSC event 1",
+              "startDate": "2025-01-01T17:00",
+              "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+              "eventStatus": "https://schema.org/EventScheduled",
+              "image": [https://terrydavisghost.github.io/SSC.github.io/images/newsimages/AdobeStock_182621900shoesball.png
+               ],
+              "description": "Book your place for the summer evening social tournament at the SSC."
+            }
+        </script>
     </head>
     <body>
 <!--navigational bar where all elements will be aligned horizontally-->
-         <nav> 
-           <a href="index.html">
+           <nav> 
+           <a tabindex="0" href="index.html">
                <img src="images/logo/Asset%201.svg" height="90" width="176" alt="site logo">
            </a> 
            <div>
-               <div class="navwrap">
-                         <a class="clickable_links" href="why-play.html" title="why play soccer?">Why play?</a>  
-                         <a class="clickable_links" href="news.html" title="all news">News</a> 
-                         <a class="clickable_links" href="about_us.html" title="who we are">About us</a>
-                         <a class="clickable_links" href="competitions.html" title="league competitions">Competitions
+               <div aria-label="nav interaction links" class="navwrap">
+                         <a tabindex="2" class="clickable_links" href="why-play.html" title="why play soccer?">Why play?</a>  
+                         <a tabindex="3" class="clickable_links" href="news.html" title="all news">News</a> 
+                         <a tabindex="4" class="clickable_links" href="about_us.html" title="who we are">About us</a>
+                         <a tabindex="1" class="clickable_links" href="competitions.html" title="league competitions">Competitions
                          </a>
                 </div>
                 <form role="search">   
@@ -33,19 +51,19 @@
             </div>
             <label>
                <img src="images/hamburger_icon.svg" alt="drop-down icon"> 
-                <input type="checkbox" id="touch">
-                <div id="nav-mobile">
+                <input type="checkbox" id="touch" aria-haspopup="menu">
+                <div id="nav-mobile" role="menu" aria-hidden="true">
                     <div>
-                        <a class="clickable_links" href="why-play.html" title="why play soccer?">Why play?</a>
+                        <a tabindex="2" class="clickable_links" href="why-play.html" title="why play soccer?">Why play?</a>
                     </div>
                     <div>
-                        <a class="clickable_links" href="news.html" title="all news">News</a>
+                        <a tabindex="3" class="clickable_links" href="news.html" title="all news">News</a>
                     </div>
                     <div>
-                        <a class="clickable_links" href="about_us.html" title="who we are">About us</a>
+                        <a tabindex="4" class="clickable_links" href="about_us.html" title="who we are">About us</a>
                     </div>
                     <div>
-                        <a class="clickable_links" href="competitions.html" title="league competitions">Competitions
+                        <a tabindex="1" class="clickable_links" href="competitions.html" title="league competitions">Competitions
                          </a>
                     </div>
                     <form role="search">   
@@ -57,6 +75,7 @@
                </div>
            </label>
     </nav>
+      
         <header class="page_header">
             <h1 class="h1-2">Contact us</h1>
         </header>
