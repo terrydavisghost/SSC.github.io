@@ -80,7 +80,7 @@ nav input{
     margin-right: 10px;
 }
 
-button{
+nav button{
     width: 25.2px;
     height: 25.2px;
     background-color: white;
@@ -253,17 +253,17 @@ blockquote{
    }
 
 #tournament_images
-    {display: inline-flex;
+    {display: flex;
     align-items: center;
+    justify-content: space-evenly;
     height: auto;
     background-color: RGBA(240, 80, 10, 1);
-    padding: 30px;
     width: 100%;
     box-sizing: border-box;
    }
 
 #tournament_images img{
-    width: 100%;
+    width: 30%;
     height: auto;
 }
 
@@ -457,6 +457,7 @@ footer
      background-color: RGBA(240, 80, 10, 1);
      height: auto;
     width: 100%;
+    font-size: 1.3em;
         padding: 30px 0px;
      color: white;
     display: flex;
@@ -632,7 +633,8 @@ textarea{
     margin-top: 30px;
     color: black;
     width: auto;
-    font-weight: 500}
+    font-weight: 500;
+    font-size: 1.3em;}
 
 .linkbutton:hover
     {background-color: white;}
@@ -818,6 +820,7 @@ a {
     
     #tournament_images img{
     width: 70%;
+    height: 70%;
 }
     .article_dashed{
     width: 70%;
